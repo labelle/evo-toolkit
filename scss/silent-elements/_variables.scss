@@ -8,7 +8,7 @@
 
 
 
-///* --------------------------- FONTS --------------------------- */
+///* --------------------------- SYSTEM FONTS --------------------------- */
 
 $font_stack_arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 $font_stack_arial_black: 'Arial Black', 'Arial Bold', Gadget, sans-serif;
@@ -20,7 +20,10 @@ $font_stack_monaco: Monaco, Menlo, Consolas, 'Courier New', monospace;
 
 $font_stack_helvetica_neue: 'helvetica neue',helvetica, arial, sans-serif;
 $font_stack_helvetica_neue_thin: 'HelveticaNeue-Thin', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
-// futura here
+
+///* --------------------------- GOOGLE FONTS --------------------------- */
+
+$font_stack_open_sans: 'Open Sans', sans-serif;
 
 ///* Define base sizes */
 
@@ -217,10 +220,10 @@ $cmy_yellow_evo:		rgb( 255, 242, 0 );			// #fff200 cmy yellow
 
 ///* Define overall brand colors */
 
-$brand_color_1:                     $cmy_green_evo ;    
+$brand_color_1:                     $cmy_cyan_evo;    
 $brand_color_2:                     $cmy_blue_evo ;
-$brand_color_3:                     $cmy_cyan_evo;     
-$brand_color_4:                     $cmy_magenta_evo;
+$brand_color_3:                     $cmy_magenta_evo;    
+$brand_color_4:                     $cmy_green_evo ;
 
 
 
@@ -232,6 +235,7 @@ $brand_color_4:                     $cmy_magenta_evo;
 $link_color:                        $black_evo;
 $link_color_visited:                $black_evo;
 $link_color_active:                 $black_evo;
+$link_color_hover:                 	$brand_color_1;
 $link_color_disabled:               $gray_evo;
 
 $link_color_inverse:                $white_evo;
@@ -532,7 +536,7 @@ $form_corners_evo:               5px;
 // If you want to use these font variables you should uncomment these variables below
 // and uncomment them in _headers.scss, _buttons.scss and _list.scss
 
-// $header_fonts:                      $font_stack_arial; // header fonts
+// $header_fonts:                      $font_stack_open_sans; // header fonts
 // $text_fonts:                        $font_stack_arial; // body copy fonts
 // $button_fonts:                      $font_stack_arial; // button fonts
 

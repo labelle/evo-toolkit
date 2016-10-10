@@ -138,7 +138,8 @@ body, html {
 
 // Define overall brand fonts
 
-.brand-font-1 { @extend %evo-font-arial; }
+%brand-font-1 { @extend %evo-font-open-sans; font-weight:800; letter-spacing:-.02rem; }
+%brand-font-2 { @extend %evo-font-open-sans; font-weight:300; letter-spacing:-.02rem; }
 
 
 
@@ -159,7 +160,7 @@ body, html {
 %evo-header-base                    {
     @extend %evo-no-line;
     // line-height:     change variable for headers.scss below 
-    // font-family:     default is header_fonts in FONTS above 
+    @extend %brand-font-1;
     // font-size:       change variable for headers.scss below 
     // letter-spacing:  change variable for headers.scss below 
     // border-top:      change variable for headers.scss below 
@@ -184,6 +185,7 @@ body, html {
 %evo-header-inverse-base            {
     @extend .evo-white;
     @extend %evo-no-line;                   // use to suppress lines above all headers
+    @extend %brand-font-1;
 
 }
 
@@ -209,7 +211,7 @@ body, html {
 %evo-subheader-base                 {
     // @extend %evo-no-line;
     // line-height:     change variable for headers.scss above 
-    // font-family:     default is header_fonts in FONTS above 
+    @extend %brand-font-1;
     // font-size:       change variable for headers.scss above 
     // letter-spacing:  change variable for headers.scss above 
     // border-top:      change variable for headers.scss above 
@@ -218,21 +220,22 @@ body, html {
     // text-transform:  default is in headers.scss; 
 }
 
-.evo-subheader-caps                 { @extend %evo-header-10-caps; }
+.evo-subheader-caps                 { @extend %evo-header-10-caps; @extend %evo-subheader-base; }
 
-.evo-subheader-biggest              { @extend %evo-header-16; }
-.evo-subheader-bigger               { @extend %evo-header-14; } // intro copy
-.evo-subheader-big                  { @extend %evo-header-12; }
-.evo-subheader                      { @extend %evo-header-10; } // body copy
-.evo-subheader-small                { @extend %evo-header-8; }
-.evo-subheader-smaller              { @extend %evo-header-6; } // captions
-.evo-subheader-smallest             { @extend %evo-header-4; }
+.evo-subheader-biggest              { @extend %evo-header-16; @extend %evo-subheader-base; }
+.evo-subheader-bigger               { @extend %evo-header-14; @extend %evo-subheader-base; } // intro copy
+.evo-subheader-big                  { @extend %evo-header-12; @extend %evo-subheader-base; }
+.evo-subheader                      { @extend %evo-header-10; @extend %evo-subheader-base; } // body copy
+.evo-subheader-small                { @extend %evo-header-8; @extend %evo-subheader-base; }
+.evo-subheader-smaller              { @extend %evo-header-6; @extend %evo-subheader-base; } // captions
+.evo-subheader-smallest             { @extend %evo-header-4; @extend %evo-subheader-base; }
 
 
 // Inverse 
 
 %evo-subheader-inverse-base         {
     @extend .evo-white;
+    @extend %brand-font-1;
     // @extend %evo-no-line;
 
 }
@@ -256,27 +259,29 @@ body, html {
 // ================================================================================ 
 
 %evo-text-base {
+    @extend %brand-font-2;
     
 }
 
 
 
-.evo-text-intro             { @extend %evo-text-10; @extend .evo-gray; } 
+.evo-text-intro             { @extend %evo-text-10; @extend %evo-text-base; @extend .evo-gray; } 
 
 
-.evo-text-biggest           { @extend %evo-text-16; }
-.evo-text-bigger            { @extend %evo-text-14; } // intro copy
-.evo-text-big               { @extend %evo-text-12; }
-.evo-text                   { @extend %evo-text-10; } // body copy
-.evo-text-small             { @extend %evo-text-8; }
-.evo-text-smaller           { @extend %evo-text-6; } // captions
-.evo-text-smallest          { @extend %evo-text-4; }
+.evo-text-biggest           { @extend %evo-text-16; @extend %evo-text-base; }
+.evo-text-bigger            { @extend %evo-text-14; @extend %evo-text-base; } // intro copy
+.evo-text-big               { @extend %evo-text-12; @extend %evo-text-base; }
+.evo-text                   { @extend %evo-text-10; @extend %evo-text-base; } // body copy
+.evo-text-small             { @extend %evo-text-8; @extend %evo-text-base; }
+.evo-text-smaller           { @extend %evo-text-6; @extend %evo-text-base; } // captions
+.evo-text-smallest          { @extend %evo-text-4; @extend %evo-text-base; }
 
 
 // Inverse 
 
 %evo-text-inverse-base              {
     @extend .evo-white;
+    @extend %brand-font-2;
 }
 
 .evo-text-inverse-intro         { @extend %evo-text-10; @extend %evo-text-inverse-base; } 
@@ -331,16 +336,17 @@ body, html {
 
 
 %evo-list-bullets-base {
+    @extend %brand-font-2;
     
 }
 
-.evo-list-bullets-biggest  { @extend %evo-text-16-bullets; }
-.evo-list-bullets-bigger   { @extend %evo-text-14-bullets; }
-.evo-list-bullets-big      { @extend %evo-text-12-bullets; }
-.evo-list-bullets          { @extend %evo-text-10-bullets; }
-.evo-list-bullets-small    { @extend %evo-text-8-bullets; }
-.evo-list-bullets-smaller  { @extend %evo-text-6-bullets; }
-.evo-list-bullets-smallest { @extend %evo-text-4-bullets; } 
+.evo-list-bullets-biggest  { @extend %evo-text-16-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets-bigger   { @extend %evo-text-14-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets-big      { @extend %evo-text-12-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets          { @extend %evo-text-10-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets-small    { @extend %evo-text-8-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets-smaller  { @extend %evo-text-6-bullets; @extend %evo-list-bullets-base; }
+.evo-list-bullets-smallest { @extend %evo-text-4-bullets; @extend %evo-list-bullets-base; } 
 
 
 
@@ -348,6 +354,7 @@ body, html {
 
 .evo-list-bullets-inverse-base {
     @extend .evo-white;
+    @extend %brand-font-2;
 }
 
 .evo-list-bullets-inverse-biggest  { 
@@ -522,22 +529,40 @@ ul.evo-list-bullets-inverse-smallest li {
 
 
 %evo-list-lines-base {
-    
+    @extend %brand-font-2;
+
+    li { border-top-color: #cccccc !important;  
 }
 
-.evo-list-lines-biggest  { @extend %evo-text-16-lines; }
-.evo-list-lines-bigger   { @extend %evo-text-14-lines; }
-.evo-list-lines-big      { @extend %evo-text-12-lines; }
-.evo-list-lines          { @extend %evo-text-10-lines; }
-.evo-list-lines-small    { @extend %evo-text-8-lines; }
-.evo-list-lines-smaller  { @extend %evo-text-6-lines; }
-.evo-list-lines-smallest { @extend %evo-text-4-lines; } 
+    li:last-child { border-bottom-color: #cccccc !important;  
+}
+
+}
+
+
+
+
+.evo-list-lines-biggest  { @extend %evo-text-16-lines; @extend %evo-list-lines-base; }
+.evo-list-lines-bigger   { @extend %evo-text-14-lines; @extend %evo-list-lines-base; }
+.evo-list-lines-big      { @extend %evo-text-12-lines; @extend %evo-list-lines-base; }
+.evo-list-lines          { @extend %evo-text-10-lines; @extend %evo-list-lines-base; }
+.evo-list-lines-small    { @extend %evo-text-8-lines; @extend %evo-list-lines-base; }
+.evo-list-lines-smaller  { @extend %evo-text-6-lines; @extend %evo-list-lines-base; }
+.evo-list-lines-smallest { @extend %evo-text-4-lines; @extend %evo-list-lines-base; } 
 
 
 // Inverse 
 
 %evo-list-lines-inverse-base {
     @extend .evo-white;
+    @extend %brand-font-2;
+
+    li { border-top-color: #333333 !important;  
+}
+
+    li:last-child { border-bottom-color: #333333 !important;  
+}
+
 }
 
 .evo-list-lines-inverse-biggest  { @extend %evo-text-16-lines; @extend %evo-list-lines-inverse-base; }
@@ -733,7 +758,7 @@ ul.evo-list-bullets-inverse-smallest li {
 
 a:link                      { color: $link_color;           text-decoration: $text_decoration_link; }
 a:visited                   { color: $link_color_visited;   text-decoration: $text_decoration_visited; }
-a:hover                     {                               text-decoration: $text_decoration_hover; }
+a:hover                     { color: $link_color_hover;   text-decoration: $text_decoration_hover; }
 a:active                    { color: $link_color_active;    text-decoration: $text_decoration_active; }
 .evo-active                 { font-weight: bold; }
 
@@ -949,14 +974,14 @@ a.brand-color-inverse-4-ghost-solid:hover span     { color: $black_evo; border-c
 
 p.highlight,
 ::-moz-selection {
-  background: $gray_evo;
+  background: $brand_color_1;
   color: $white_evo;
 }
 
 
 p.highlight,
 ::selection {
-  background: $gray_evo;
+  background: $brand_color_1;
   color: $white_evo;
 }
 
@@ -1143,6 +1168,8 @@ p a.dashed:hover {
     display: inline-block;
     // background: none;
     // @extend %brand-color-1-button;
+    @extend %brand-font-2;
+
 }
 
 .evo-button-biggest         { @extend %evo-button-16; @extend %evo-button-base; }
@@ -1166,6 +1193,8 @@ p a.dashed:hover {
     // a:hover {
     //     border-color: $link_color_inverse_hover !important;
     // }
+    @extend %brand-font-2 !important;
+    border: 1px !important;
 }
 
 .evo-button-inverse-biggest     { @extend %evo-button-16; @extend %evo-button-inverse-base; }
@@ -1188,11 +1217,12 @@ p a.dashed:hover {
 %evo-form-base {
     display: block;
     overflow: auto;
-    @extend .evo-font-1;        
+    // @extend .evo-font-1;        
     // .evo-black;
     // .evo-white-bg;
     // border-radius: $form_corners_evo;
     // textarea { resize: vertical; }
+    @extend %brand-font-2;
 }
 
 // .evo-form-biggest
@@ -1253,7 +1283,8 @@ p a.dashed:hover {
 %evo-form-inverse-base {
     display: block;
     overflow: auto;
-    @extend .evo-font-1;
+    @extend %brand-font-2;
+    // @extend .evo-font-1;
     @extend .evo-white;
     // @extend .evo-black-bg;
     input, 
@@ -1425,16 +1456,16 @@ p a.dashed:hover {
 
 
 .brand-color-1-hover        { color: $brand_color_1; }
-.brand-color-1-active       { font-weight: bold; }
+.brand-color-1-active       { @extend %brand-font-1; }
 
 .brand-color-2-hover        { color: $brand_color_2; }
-.brand-color-2-active       {font-weight: bold; }
+.brand-color-2-active       { @extend %brand-font-1; }
 
 .brand-color-3-hover        { color: $brand_color_3; }
-.brand-color-3-active       { font-weight: bold; }
+.brand-color-3-active       { @extend %brand-font-1; }
 
 .brand-color-4-hover        { color: $brand_color_4; }
-.brand-color-4-active       { font-weight: bold; }
+.brand-color-4-active       { @extend %brand-font-1; }
 
 
 
@@ -1457,37 +1488,37 @@ p a.dashed:hover {
 
 
 
-.brand-color-button-link        { @extend %evo-button-14; color: $link_color; border-color: $link_color; }
-.brand-color-button-visited     { @extend %evo-button-14; color: $link_color; border-color: $link_color; }
-.brand-color-button-hover       { @extend %evo-button-14; color: $gray_evo; border-color: $gray_evo; }
-.brand-color-solid-button-hover { @extend %evo-button-14; color: $white_evo; background-color: $gray_evo; border-color: $gray_evo; }
-.brand-color-button-active      { @extend %evo-button-14; color: $link_color; border-color: $link_color; }
-.brand-color-button-disabled    { @extend %evo-button-14; @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
+.brand-color-button-link        { color: $link_color; border-color: $link_color; }
+.brand-color-button-visited     { color: $link_color; border-color: $link_color; }
+.brand-color-button-hover       { color: $gray_evo; border-color: $gray_evo; }
+.brand-color-solid-button-hover { color: $white_evo; background-color: $gray_evo; border-color: $gray_evo; }
+.brand-color-button-active      { color: $link_color; border-color: $link_color; }
+.brand-color-button-disabled    { @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
 
 
 
-.brand-color-1-button-hover       { @extend %evo-button-14; color: $brand_color_1; border-color: $brand_color_1; }
-.brand-color-2-button-hover       { @extend %evo-button-14; color: $brand_color_2; border-color: $brand_color_2; }
-.brand-color-3-button-hover       { @extend %evo-button-14; color: $brand_color_3; border-color: $brand_color_3; }
-.brand-color-4-button-hover       { @extend %evo-button-14; color: $brand_color_4; border-color: $brand_color_4; }
+.brand-color-1-button-hover       { color: $brand_color_1; border-color: $brand_color_1; }
+.brand-color-2-button-hover       { color: $brand_color_2; border-color: $brand_color_2; }
+.brand-color-3-button-hover       { color: $brand_color_3; border-color: $brand_color_3; }
+.brand-color-4-button-hover       { color: $brand_color_4; border-color: $brand_color_4; }
 
 
-.brand-color-1-button-active       { @extend %evo-button-14; color: $link_color; font-weight: bold; border-color: $link_color; }
-.brand-color-2-button-active       { @extend %evo-button-14; color: $link_color; font-weight: bold; border-color: $link_color; }
-.brand-color-3-button-active       { @extend %evo-button-14; color: $link_color; font-weight: bold; border-color: $link_color; }
-.brand-color-4-button-active       { @extend %evo-button-14; color: $link_color; font-weight: bold; border-color: $link_color; }
+.brand-color-1-button-active       { color: $link_color; font-weight: bold; border-color: $link_color; }
+.brand-color-2-button-active       { color: $link_color; font-weight: bold; border-color: $link_color; }
+.brand-color-3-button-active       { color: $link_color; font-weight: bold; border-color: $link_color; }
+.brand-color-4-button-active       { color: $link_color; font-weight: bold; border-color: $link_color; }
 
 
-.brand-color-1-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
-.brand-color-2-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
-.brand-color-3-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
-.brand-color-4-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
+.brand-color-1-button-disabled     { @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
+.brand-color-2-button-disabled     { @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
+.brand-color-3-button-disabled     { @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
+.brand-color-4-button-disabled     { @extend .disabled-button; color: $light_gray_evo; border-color: $light_gray_evo; }
 
 
-.brand-color-inverse-1-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
-.brand-color-inverse-2-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
-.brand-color-inverse-3-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
-.brand-color-inverse-4-button-disabled     { @extend %evo-button-14; @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
+.brand-color-inverse-1-button-disabled     { @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
+.brand-color-inverse-2-button-disabled     { @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
+.brand-color-inverse-3-button-disabled     { @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
+.brand-color-inverse-4-button-disabled     { @extend .disabled-button; color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo; }
 
 
 /* Inverse */
@@ -1501,24 +1532,46 @@ p a.dashed:hover {
 }
 
 
-.brand-color-inverse-button-link        { @extend %evo-button-14; color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-button-visited     { @extend %evo-button-14; color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-button-hover       { @extend %evo-button-14; color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-button-active      { @extend %evo-button-14; color: $link_color_inverse; border-color: $link_color_inverse; }
+.brand-color-inverse-button-link        { color: $link_color_inverse; border-color: $link_color_inverse; }
+.brand-color-inverse-button-visited     { color: $link_color_inverse; border-color: $link_color_inverse; }
+.brand-color-inverse-button-hover       { color: $link_color_inverse; border-color: $link_color_inverse; }
+.brand-color-inverse-button-active      { color: $link_color_inverse; border-color: $link_color_inverse; }
+
+.brand-color-inverse-button-link,
+.brand-color-inverse-button-visited,
+.brand-color-inverse-button-hover,
+.brand-color-inverse-button-active {
+    @extend %brand-font-2;
+
+}
 
 
+.brand-color-inverse-1-button-hover       { color: $brand_color_1; border-color: $brand_color_1; }
+.brand-color-inverse-2-button-hover       { color: $brand_color_2; border-color: $brand_color_2; }
+.brand-color-inverse-3-button-hover       { color: $brand_color_3; border-color: $brand_color_3; }
+.brand-color-inverse-4-button-hover       { color: $brand_color_4; border-color: $brand_color_4; }
 
-.brand-color-inverse-1-button-hover       { @extend %evo-button-14; color: $brand_color_1; border-color: $brand_color_1; }
-.brand-color-inverse-2-button-hover       { @extend %evo-button-14; color: $brand_color_2; border-color: $brand_color_2; }
-.brand-color-inverse-3-button-hover       { @extend %evo-button-14; color: $brand_color_3; border-color: $brand_color_3; }
-.brand-color-inverse-4-button-hover       { @extend %evo-button-14; color: $brand_color_4; border-color: $brand_color_4; }
+.brand-color-inverse-1-button-hover,
+.brand-color-inverse-2-button-hover,
+.brand-color-inverse-3-button-hover,
+.brand-color-inverse-4-button-hover, {
+    @extend %brand-font-2;
+
+}
 
 
-.brand-color-inverse-1-button-active       { @extend %evo-button-14; color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
-.brand-color-inverse-2-button-active       { @extend %evo-button-14; color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
-.brand-color-inverse-3-button-active       { @extend %evo-button-14; color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
-.brand-color-inverse-4-button-active       { @extend %evo-button-14; color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
+.brand-color-inverse-1-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
+.brand-color-inverse-2-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
+.brand-color-inverse-3-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
+.brand-color-inverse-4-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
 
+.brand-color-inverse-1-button-active,
+.brand-color-inverse-2-button-active,
+.brand-color-inverse-3-button-active,
+.brand-color-inverse-4-button-active, {
+    @extend %brand-font-2;
+
+}
 
  
 
