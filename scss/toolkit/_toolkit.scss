@@ -1537,13 +1537,13 @@ p a.dashed:hover {
 .brand-color-inverse-button-hover       { color: $link_color_inverse; border-color: $link_color_inverse; }
 .brand-color-inverse-button-active      { color: $link_color_inverse; border-color: $link_color_inverse; }
 
-.brand-color-inverse-button-link,
-.brand-color-inverse-button-visited,
-.brand-color-inverse-button-hover,
-.brand-color-inverse-button-active {
-    @extend %brand-font-2;
+// .brand-color-inverse-button-link,
+// .brand-color-inverse-button-visited,
+// .brand-color-inverse-button-hover,
+// .brand-color-inverse-button-active {
+//     @extend %brand-font-2;
 
-}
+// }
 
 
 .brand-color-inverse-1-button-hover       { color: $brand_color_1; border-color: $brand_color_1; }
@@ -1551,13 +1551,13 @@ p a.dashed:hover {
 .brand-color-inverse-3-button-hover       { color: $brand_color_3; border-color: $brand_color_3; }
 .brand-color-inverse-4-button-hover       { color: $brand_color_4; border-color: $brand_color_4; }
 
-.brand-color-inverse-1-button-hover,
-.brand-color-inverse-2-button-hover,
-.brand-color-inverse-3-button-hover,
-.brand-color-inverse-4-button-hover, {
-    @extend %brand-font-2;
+// .brand-color-inverse-1-button-hover,
+// .brand-color-inverse-2-button-hover,
+// .brand-color-inverse-3-button-hover,
+// .brand-color-inverse-4-button-hover, {
+//     @extend %brand-font-2;
 
-}
+// }
 
 
 .brand-color-inverse-1-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
@@ -1565,13 +1565,13 @@ p a.dashed:hover {
 .brand-color-inverse-3-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
 .brand-color-inverse-4-button-active       { color: $link_color_inverse_active; font-weight: bold; border-color: $link_color_inverse_active; }
 
-.brand-color-inverse-1-button-active,
-.brand-color-inverse-2-button-active,
-.brand-color-inverse-3-button-active,
-.brand-color-inverse-4-button-active, {
-    @extend %brand-font-2;
+// .brand-color-inverse-1-button-active,
+// .brand-color-inverse-2-button-active,
+// .brand-color-inverse-3-button-active,
+// .brand-color-inverse-4-button-active, {
+//     @extend %brand-font-2;
 
-}
+// }
 
  
 
