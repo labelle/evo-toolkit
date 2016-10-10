@@ -265,7 +265,7 @@ body, html {
 
 
 
-.evo-text-intro             { @extend %evo-text-10; @extend %evo-text-base; @extend .evo-gray; } 
+.evo-text-intro             { @extend %evo-text-14; @extend %evo-text-base; @extend .evo-gray; } 
 
 
 .evo-text-biggest           { @extend %evo-text-16; @extend %evo-text-base; }
@@ -284,7 +284,7 @@ body, html {
     @extend %brand-font-2;
 }
 
-.evo-text-inverse-intro         { @extend %evo-text-10; @extend %evo-text-inverse-base; } 
+.evo-text-inverse-intro         { @extend %evo-text-14; @extend %evo-text-inverse-base; } 
 
 .evo-text-inverse-biggest       { @extend %evo-text-16; @extend %evo-text-inverse-base; }
 .evo-text-inverse-bigger        { @extend %evo-text-14; @extend %evo-text-inverse-base; } // intro copy
@@ -1193,7 +1193,7 @@ p a.dashed:hover {
     // a:hover {
     //     border-color: $link_color_inverse_hover !important;
     // }
-    @extend %brand-font-2 !important;
+    @extend %brand-font-2;
     border: 1px !important;
 }
 
