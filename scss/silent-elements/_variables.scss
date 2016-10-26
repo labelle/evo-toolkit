@@ -493,11 +493,11 @@ $button_line_height_3:             0rem;   // button 25 thru button 30
 
 $button_color:                      $black_evo;     // Should be defined by link colors below
 $button_border_color:               $black_evo;
-$button_background_color:           $white_evo;
+$button_background_color:           transparent;
 
 $button_color_inverse:              $white_evo;   // Should be defined by link colors below
 $button_border_color_inverse:       $white_evo;
-$button_background_color_inverse:   $black_evo;
+$button_background_color_inverse:   transparent;
 
 
 

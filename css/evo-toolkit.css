@@ -2656,38 +2656,38 @@ ul.evo-list-bullets-inverse-smallest li {
 .evo-list-lines-inverse-biggest li:last-child, .evo-list-lines-inverse-bigger li:last-child, .evo-list-lines-inverse-big li:last-child, .evo-list-lines-inverse li:last-child, .evo-list-lines-inverse-small li:last-child, .evo-list-lines-inverse-smaller li:last-child, .evo-list-lines-inverse-smallest li:last-child {
   border-bottom-color: #333333 !important; }
 
-.solid span {
+.solid button {
   background-color: #000000;
   border-color: #000000;
   color: #FFFFFF; }
 
-.solid:hover span {
+.solid:hover button {
   background-color: #7F7F7F;
   border-color: #7F7F7F; }
 
-.solid-inverse span {
+.solid-inverse button {
   background-color: #FFFFFF;
   border-color: #FFFFFF;
   color: #000000; }
 
-.solid-inverse:hover span {
+.solid-inverse:hover button {
   background-color: #7F7F7F;
   border-color: #7F7F7F; }
 
-.ghost-solid span {
+.ghost-solid button {
   border-color: #000000;
   color: #000000; }
 
-.ghost-solid:hover span {
+.ghost-solid:hover button {
   background-color: #7F7F7F;
   border-color: #7F7F7F;
   color: #FFFFFF; }
 
-.ghost-solid-inverse span {
+.ghost-solid-inverse button {
   border-color: #FFFFFF;
   color: #FFFFFF; }
 
-.ghost-solid-inverse:hover span {
+.ghost-solid-inverse:hover button {
   background-color: #7F7F7F;
   border-color: #7F7F7F;
   color: #000000; }
@@ -2696,7 +2696,7 @@ ul.evo-list-bullets-inverse-smallest li {
   pointer-events: none;
   cursor: default; }
 
-.disabled-button, a.brand-color-1-solid-disabled span, a.brand-color-1-solid-disabled, a.brand-color-2-solid-disabled span, a.brand-color-2-solid-disabled, a.brand-color-3-solid-disabled span, a.brand-color-3-solid-disabled, a.brand-color-4-solid-disabled span, a.brand-color-4-solid-disabled, .brand-color-solid-button-disabled, .brand-color-inverse-solid-button-disabled, a.brand-color-inverse-1-solid-disabled span, a.brand-color-inverse-1-solid-disabled, a.brand-color-inverse-2-solid-disabled span, a.brand-color-inverse-2-solid-disabled, a.brand-color-inverse-3-solid-disabled span, a.brand-color-inverse-3-solid-disabled, a.brand-color-inverse-4-solid-disabled span, a.brand-color-inverse-4-solid-disabled, .brand-color-button-disabled, .brand-color-1-button-disabled, .brand-color-2-button-disabled, .brand-color-3-button-disabled, .brand-color-4-button-disabled, .brand-color-inverse-1-button-disabled, .brand-color-inverse-2-button-disabled, .brand-color-inverse-3-button-disabled, .brand-color-inverse-4-button-disabled {
+.disabled-button, a.brand-color-1-solid-disabled button, a.brand-color-1-solid-disabled, a.brand-color-2-solid-disabled button, a.brand-color-2-solid-disabled, a.brand-color-3-solid-disabled button, a.brand-color-3-solid-disabled, a.brand-color-4-solid-disabled button, a.brand-color-4-solid-disabled, .brand-color-solid-button-disabled, .brand-color-inverse-solid-button-disabled, a.brand-color-inverse-1-solid-disabled button, a.brand-color-inverse-1-solid-disabled, a.brand-color-inverse-2-solid-disabled button, a.brand-color-inverse-2-solid-disabled, a.brand-color-inverse-3-solid-disabled button, a.brand-color-inverse-3-solid-disabled, a.brand-color-inverse-4-solid-disabled button, a.brand-color-inverse-4-solid-disabled, .brand-color-button-disabled, .brand-color-1-button-disabled, .brand-color-2-button-disabled, .brand-color-3-button-disabled, .brand-color-4-button-disabled, .brand-color-inverse-1-button-disabled, .brand-color-inverse-2-button-disabled, .brand-color-inverse-3-button-disabled, .brand-color-inverse-4-button-disabled {
   background-clip: padding-box; }
 
 a:link {
@@ -2774,65 +2774,65 @@ a.brand-color-4:hover {
 a.brand-color-4-disabled {
   color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-1-solid span {
+a.brand-color-1-solid button {
   color: #FFFFFF;
   border-color: #000000;
   background-color: #000000; }
 
-a.brand-color-1-solid-disabled span {
+a.brand-color-1-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-1-solid:hover span {
+a.brand-color-1-solid:hover button {
   color: #FFFFFF;
   border-color: #00aeef;
   background-color: #00aeef;
   text-decoration: none; }
 
-a.brand-color-2-solid span {
+a.brand-color-2-solid button {
   color: #FFFFFF;
   border-color: #000000;
   background-color: #000000; }
 
-a.brand-color-2-solid-disabled span {
+a.brand-color-2-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-2-solid:hover span {
+a.brand-color-2-solid:hover button {
   color: #FFFFFF;
   border-color: #2e3192;
   background-color: #2e3192;
   text-decoration: none; }
 
-a.brand-color-3-solid span {
+a.brand-color-3-solid button {
   color: #FFFFFF;
   border-color: #000000;
   background-color: #000000; }
 
-a.brand-color-3-solid-disabled span {
+a.brand-color-3-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-3-solid:hover span {
+a.brand-color-3-solid:hover button {
   color: #FFFFFF;
   border-color: #ec008c;
   background-color: #ec008c;
   text-decoration: none; }
 
-a.brand-color-4-solid span {
+a.brand-color-4-solid button {
   color: #FFFFFF;
   border-color: #000000;
   background-color: #000000; }
 
-a.brand-color-4-solid-disabled span {
+a.brand-color-4-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-4-solid:hover span {
+a.brand-color-4-solid:hover button {
   color: #FFFFFF;
   border-color: #00a651;
   background-color: #00a651;
@@ -2894,61 +2894,61 @@ a.brand-color-4-solid:hover span {
   background-color: #00a651;
   border-color: #00a651; }
 
-a.brand-color-1-ghost-solid span {
+a.brand-color-1-ghost-solid button {
   color: #000000;
   border-color: #000000; }
 
-a.brand-color-1-ghost-solid-disabled span {
+a.brand-color-1-ghost-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-1-ghost-solid:hover span {
+a.brand-color-1-ghost-solid:hover button {
   color: #FFFFFF;
   border-color: #00aeef;
   background-color: #00aeef;
   text-decoration: none; }
 
-a.brand-color-2-ghost-solid span {
+a.brand-color-2-ghost-solid button {
   color: #000000;
   border-color: #000000; }
 
-a.brand-color-2-ghost-solid-disabled span {
+a.brand-color-2-ghost-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-2-ghost-solid:hover span {
+a.brand-color-2-ghost-solid:hover button {
   color: #FFFFFF;
   border-color: #2e3192;
   background-color: #2e3192;
   text-decoration: none; }
 
-a.brand-color-3-ghost-solid span {
+a.brand-color-3-ghost-solid button {
   color: #000000;
   border-color: #000000; }
 
-a.brand-color-3-ghost-solid-disabled span {
+a.brand-color-3-ghost-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-3-ghost-solid:hover span {
+a.brand-color-3-ghost-solid:hover button {
   color: #FFFFFF;
   border-color: #ec008c;
   background-color: #ec008c;
   text-decoration: none; }
 
-a.brand-color-4-ghost-solid span {
+a.brand-color-4-ghost-solid button {
   color: #000000;
   border-color: #000000; }
 
-a.brand-color-4-ghost-solid-disabled span {
+a.brand-color-4-ghost-solid-disabled button {
   color: #FFFFFF;
   border-color: rgba(0, 0, 0, 0.15);
   background-color: rgba(0, 0, 0, 0.15); }
 
-a.brand-color-4-ghost-solid:hover span {
+a.brand-color-4-ghost-solid:hover button {
   color: #FFFFFF;
   border-color: #00a651;
   background-color: #00a651;
@@ -3039,65 +3039,65 @@ a.brand-color-inverse-4:active {
 a.brand-color-inverse-4-disabled {
   color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-1-solid span {
+a.brand-color-inverse-1-solid button {
   color: #000000;
   border-color: #FFFFFF;
   background-color: #FFFFFF; }
 
-a.brand-color-inverse-1-solid-disabled span {
+a.brand-color-inverse-1-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-1-solid:hover span {
+a.brand-color-inverse-1-solid:hover button {
   color: #000000;
   border-color: #00aeef;
   background-color: #00aeef;
   text-decoration: none; }
 
-a.brand-color-inverse-2-solid span {
+a.brand-color-inverse-2-solid button {
   color: #000000;
   border-color: #FFFFFF;
   background-color: #FFFFFF; }
 
-a.brand-color-inverse-2-solid-disabled span {
+a.brand-color-inverse-2-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-2-solid:hover span {
+a.brand-color-inverse-2-solid:hover button {
   color: #000000;
   border-color: #2e3192;
   background-color: #2e3192;
   text-decoration: none; }
 
-a.brand-color-inverse-3-solid span {
+a.brand-color-inverse-3-solid button {
   color: #000000;
   border-color: #FFFFFF;
   background-color: #FFFFFF; }
 
-a.brand-color-inverse-3-solid-disabled span {
+a.brand-color-inverse-3-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-3-solid:hover span {
+a.brand-color-inverse-3-solid:hover button {
   color: #000000;
   border-color: #ec008c;
   background-color: #ec008c;
   text-decoration: none; }
 
-a.brand-color-inverse-4-solid span {
+a.brand-color-inverse-4-solid button {
   color: #000000;
   border-color: #FFFFFF;
   background-color: #FFFFFF; }
 
-a.brand-color-inverse-4-solid-disabled span {
+a.brand-color-inverse-4-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-4-solid:hover span {
+a.brand-color-inverse-4-solid:hover button {
   color: #000000;
   border-color: #00a651;
   background-color: #00a651;
@@ -3144,62 +3144,62 @@ a.brand-color-inverse-4-solid:hover span {
   background-color: #00a651;
   border-color: #00a651; }
 
-a.brand-color-inverse-1-ghost-solid span {
+a.brand-color-inverse-1-ghost-solid button {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 
-a.brand-color-inverse-1-ghost-solid-disabled span {
+a.brand-color-inverse-1-ghost-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-1-ghost-solid:hover span {
+a.brand-color-inverse-1-ghost-solid:hover button {
   color: #000000;
   border-color: #00aeef;
   background-color: #00aeef;
   text-decoration: none; }
 
-a.brand-color-inverse-2-ghost-solid span {
+a.brand-color-inverse-2-ghost-solid button {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 
-a.brand-color-inverse-2-ghost-solid-disabled span {
+a.brand-color-inverse-2-ghost-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-2-ghost-solid:hover span {
+a.brand-color-inverse-2-ghost-solid:hover button {
   color: #000000;
   border-color: #2e3192;
   background-color: #2e3192;
   text-decoration: none; }
 
-a.brand-color-inverse-3-ghost-solid span {
+a.brand-color-inverse-3-ghost-solid button {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 
-a.brand-color-inverse-3-ghost-solid-disabled span {
+a.brand-color-inverse-3-ghost-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15); }
 
-a.brand-color-inverse-3-ghost-solid:hover span {
+a.brand-color-inverse-3-ghost-solid:hover button {
   color: #000000;
   border-color: #ec008c;
   background-color: #ec008c;
   text-decoration: none; }
 
-a.brand-color-inverse-4-ghost-solid span {
+a.brand-color-inverse-4-ghost-solid button {
   color: #FFFFFF;
   border-color: #FFFFFF; }
 
-a.brand-color-inverse-4-ghost-solid-disabled span {
+a.brand-color-inverse-4-ghost-solid-disabled button {
   color: #000000;
   border-color: rgba(255, 255, 255, 0.15);
   background-color: rgba(255, 255, 255, 0.15);
   font-weight: normal !important; }
 
-a.brand-color-inverse-4-ghost-solid:hover span {
+a.brand-color-inverse-4-ghost-solid:hover button {
   color: #000000;
   border-color: #00a651;
   background-color: #00a651;
@@ -3314,6 +3314,7 @@ p a.dashed:hover {
 /* ================================================================================ */
 .evo-button-biggest, .evo-button-largest, .evo-button-bigger, .evo-button-larger, .evo-button-big, .evo-button-large, .evo-button, .evo-button-small, .evo-button-smaller, .evo-button-smallest {
   border: 1px solid;
+  background-color: transparent;
   border-radius: 0px;
   display: inline-block; }
 
@@ -3323,6 +3324,7 @@ p a.dashed:hover {
 .brand-color-inverse-4-button {
   border: 1px solid;
   color: #FFFFFF;
+  background-color: transparent;
   border-radius: 0px;
   display: inline-block;
   border: 1px !important; }
