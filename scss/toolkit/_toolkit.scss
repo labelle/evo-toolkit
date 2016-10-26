@@ -1160,6 +1160,7 @@ p a.dashed:hover {
 /* ================================================================================ */ 
 
 %evo-button-base                    {
+    border:1px solid;
     // color: $button_color;  // Defined by button colors in COLORS above
     // border-color: $button_border_color;
     // background-color: $button_background_color;
@@ -1184,6 +1185,7 @@ p a.dashed:hover {
 // Inverse 
 
 %evo-button-inverse-base             {
+    border:1px solid;
     color: $button_color_inverse;   // Defined by button colors in COLORS above
     // background-color: $button_background_color_inverse;
     border-radius: 0px;
@@ -1213,7 +1215,6 @@ p a.dashed:hover {
 /* ================================================================================ */ 
 
 
-
 %evo-form-base {
     display: block;
     overflow: auto;
@@ -1223,6 +1224,7 @@ p a.dashed:hover {
     // border-radius: $form_corners_evo;
     // textarea { resize: vertical; }
     @extend %brand-font-2;
+    @extend .focus-border-color; // extends a class from below
 }
 
 // .evo-form-biggest
@@ -1287,11 +1289,21 @@ p a.dashed:hover {
     // @extend .evo-font-1;
     @extend .evo-white;
     // @extend .evo-black-bg;
+    @extend .focus-border-color;
     input, 
     textarea,
     select { @extend .evo-black-bg; }
     border-radius: $form_corners_evo;
     textarea { resize: vertical; }
+}
+
+// Extra code for the focus border color on forms
+textarea.focus-border-color:focus,
+input.focus-border-color:focus,
+input[type].focus-border-color:focus,
+.uneditable-input.focus-border-color:focus {
+  border-color: rgba(0, 174, 239, 0.8) !important;
+  outline: 0 none;
 }
 
 // .evo-form-inverse-biggest
