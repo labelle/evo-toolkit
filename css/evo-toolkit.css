@@ -3104,12 +3104,12 @@ a.brand-color-inverse-4-solid:hover button {
   text-decoration: none; }
 
 .brand-color-inverse-solid-button-link {
-  color: #000000;
+  color: #FFFFFF;
   background-color: #FFFFFF;
   border-color: #FFFFFF; }
 
 .brand-color-inverse-solid-button-visited {
-  color: #000000;
+  color: #FFFFFF;
   background-color: #FFFFFF;
   border-color: #FFFFFF; }
 
@@ -3324,7 +3324,6 @@ p a.dashed:hover {
 .brand-color-inverse-4-button {
   border: 1px solid;
   color: #FFFFFF;
-  background-color: transparent;
   border-radius: 0px;
   display: inline-block;
   border: 1px !important; }

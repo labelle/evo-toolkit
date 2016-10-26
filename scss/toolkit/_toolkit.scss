@@ -821,20 +821,20 @@ a.brand-color-4-solid:hover button     { color: $white_evo; border-color: $brand
 
 
 
-.brand-color-solid-button-link                   { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
-.brand-color-solid-button-visited                { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
-.brand-color-solid-button-hover                  { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
-.brand-color-solid-button-inverse-hover          { @extend %evo-button-14; color: $black_evo; background-color: $gray_evo; border-color: $gray_evo; }
-.brand-color-solid-button-active                 { @extend %evo-button-14; color: $white_evo; background-color: $black_evo;  font-weight: bold; border-color: $black_evo;  }
-.brand-color-solid-button-disabled               { @extend %evo-button-14; @extend .disabled-button; color: $white_evo; background-color: $light_gray_evo; border-color: $light_gray_evo;  }
-.brand-color-inverse-solid-button-disabled       { @extend %evo-button-14; @extend .disabled-button; color: $black_evo; background-color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo;  }
+.brand-color-solid-button-link       { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
+.brand-color-solid-button-visited    { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
+.brand-color-solid-button-hover      { @extend %evo-button-14; color: $white_evo; background-color: $link_color; border-color: $link_color; }
+.brand-color-solid-button-inverse-hover  { @extend %evo-button-14; color: $black_evo; background-color: $gray_evo; border-color: $gray_evo; }
+.brand-color-solid-button-active     { @extend %evo-button-14; color: $white_evo; background-color: $black_evo;  font-weight: bold; border-color: $black_evo;  }
+.brand-color-solid-button-disabled   { @extend %evo-button-14; @extend .disabled-button; color: $white_evo; background-color: $light_gray_evo; border-color: $light_gray_evo;  }
+.brand-color-inverse-solid-button-disabled   { @extend %evo-button-14; @extend .disabled-button; color: $black_evo; background-color: $rgb_gray_15_inverse_evo; border-color: $rgb_gray_15_inverse_evo;  }
 
 
 
-.brand-color-1-solid-button-hover       { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_1; border-color: $brand_color_1; }
-.brand-color-2-solid-button-hover       { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_2; border-color: $brand_color_2; }
-.brand-color-3-solid-button-hover       { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_3; border-color: $brand_color_3; }
-.brand-color-4-solid-button-hover       { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_4; border-color: $brand_color_4; }
+.brand-color-1-solid-button-hover    { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_1; border-color: $brand_color_1; }
+.brand-color-2-solid-button-hover    { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_2; border-color: $brand_color_2; }
+.brand-color-3-solid-button-hover    { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_3; border-color: $brand_color_3; }
+.brand-color-4-solid-button-hover    { @extend %evo-button-14; color: $white_evo; background-color: $brand_color_4; border-color: $brand_color_4; }
 
 
 
@@ -903,39 +903,39 @@ a.brand-color-inverse-4-disabled    { color: $rgb_gray_15_inverse_evo; @extend .
 
 // Solid Inverse Links
 
-a.brand-color-inverse-1-solid button           { color: $black_evo; border-color: $link_color_inverse; background-color: $link_color_inverse;}
+a.brand-color-inverse-1-solid button           { color: $link_color_inverse; border-color: $link_color_inverse; background-color: $link_color_inverse;}
 a.brand-color-inverse-1-solid-disabled button  { color: $black_evo;  @extend .disabled-button; border-color: $rgb_gray_15_inverse_evo; background-color: $rgb_gray_15_inverse_evo;}
 a.brand-color-inverse-1-solid-disabled       { @extend .disabled; @extend .disabled-button; }
-a.brand-color-inverse-1-solid:hover button     { color: $black_evo; border-color: $brand_color_1; background-color: $brand_color_1; text-decoration: $text_decoration_hover; }
+a.brand-color-inverse-1-solid:hover button     { color: $link_color_inverse_hover; border-color: $brand_color_1; background-color: $brand_color_1; text-decoration: $text_decoration_hover; }
 
 a.brand-color-inverse-2-solid button           { color: $black_evo; border-color: $link_color_inverse; background-color: $link_color_inverse;}
 a.brand-color-inverse-2-solid-disabled button  { color: $black_evo;  @extend .disabled-button; border-color: $rgb_gray_15_inverse_evo; background-color: $rgb_gray_15_inverse_evo;}
 a.brand-color-inverse-2-solid-disabled       { @extend .disabled; @extend .disabled-button; }
-a.brand-color-inverse-2-solid:hover button     { color: $black_evo; border-color: $brand_color_2; background-color: $brand_color_2; text-decoration: $text_decoration_hover; }
+a.brand-color-inverse-2-solid:hover button     { color: $link_color_inverse_hover; border-color: $brand_color_2; background-color: $brand_color_2; text-decoration: $text_decoration_hover; }
 
 a.brand-color-inverse-3-solid button           { color: $black_evo; border-color: $link_color_inverse; background-color: $link_color_inverse;}
 a.brand-color-inverse-3-solid-disabled button  { color: $black_evo;  @extend .disabled-button; border-color: $rgb_gray_15_inverse_evo; background-color: $rgb_gray_15_inverse_evo;}
 a.brand-color-inverse-3-solid-disabled       { @extend .disabled; @extend .disabled-button; }
-a.brand-color-inverse-3-solid:hover button     { color: $black_evo; border-color: $brand_color_3; background-color: $brand_color_3; text-decoration: $text_decoration_hover; }
+a.brand-color-inverse-3-solid:hover button     { color: $link_color_inverse_hover; border-color: $brand_color_3; background-color: $brand_color_3; text-decoration: $text_decoration_hover; }
 
-a.brand-color-inverse-4-solid button           { color: $black_evo; border-color: $link_color_inverse; background-color: $link_color_inverse;}
+a.brand-color-inverse-4-solid button           { color: $link_color_inverse; border-color: $link_color_inverse; background-color: $link_color_inverse;}
 a.brand-color-inverse-4-solid-disabled button  { color: $black_evo;  @extend .disabled-button; border-color: $rgb_gray_15_inverse_evo; background-color: $rgb_gray_15_inverse_evo;}
 a.brand-color-inverse-4-solid-disabled       { @extend .disabled; @extend .disabled-button; }
-a.brand-color-inverse-4-solid:hover button     { color: $black_evo; border-color: $brand_color_4; background-color: $brand_color_4; text-decoration: $text_decoration_hover; }
+a.brand-color-inverse-4-solid:hover button     { color: $link_color_inverse_hover; border-color: $brand_color_4; background-color: $brand_color_4; text-decoration: $text_decoration_hover; }
 
 
 
-.brand-color-inverse-solid-button-link        { @extend %evo-button-14; color: $black_evo; background-color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-solid-button-visited     { @extend %evo-button-14; color: $black_evo; background-color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-solid-button-hover       { @extend %evo-button-14; color: $black_evo; background-color: $link_color_inverse; border-color: $link_color_inverse; }
-.brand-color-inverse-solid-button-active      { @extend %evo-button-14; color: $black_evo; background-color: $white_evo;  font-weight: bold; border-color: $white_evo;  }
+.brand-color-inverse-solid-button-link     { @extend %evo-button-14; color: $link_color_inverse; background-color: $link_color_inverse; border-color: $link_color_inverse; }
+.brand-color-inverse-solid-button-visited  { @extend %evo-button-14; color: $link_color_inverse_visited; background-color: $link_color_inverse_visited; border-color: $link_color_inverse_visited; }
+.brand-color-inverse-solid-button-hover    { @extend %evo-button-14; color: $link_color_inverse_hover; background-color: $link_color_inverse_hover; border-color: $link_color_inverse_hover; }
+.brand-color-inverse-solid-button-active   { @extend %evo-button-14; color: $link_color_inverse_active; background-color: $white_evo;  font-weight: bold; border-color: $white_evo;  }
 
 
 
-.brand-color-inverse-1-solid-button-hover       { @extend %evo-button-14; color: $black_evo; background-color: $brand_color_1; border-color: $brand_color_1; }
-.brand-color-inverse-2-solid-button-hover       { @extend %evo-button-14; color: $black_evo; background-color: $brand_color_2; border-color: $brand_color_2; }
-.brand-color-inverse-3-solid-button-hover       { @extend %evo-button-14; color: $black_evo; background-color: $brand_color_3; border-color: $brand_color_3; }
-.brand-color-inverse-4-solid-button-hover       { @extend %evo-button-14; color: $black_evo; background-color: $brand_color_4; border-color: $brand_color_4; }
+.brand-color-inverse-1-solid-button-hover      { @extend %evo-button-14; color: $link_color_inverse_hover; background-color: $brand_color_1; border-color: $brand_color_1; }
+.brand-color-inverse-2-solid-button-hover      { @extend %evo-button-14; color: $link_color_inverse_hover; background-color: $brand_color_2; border-color: $brand_color_2; }
+.brand-color-inverse-3-solid-button-hover      { @extend %evo-button-14; color: $link_color_inverse_hover; background-color: $brand_color_3; border-color: $brand_color_3; }
+.brand-color-inverse-4-solid-button-hover      { @extend %evo-button-14; color: $link_color_inverse_hover; background-color: $brand_color_4; border-color: $brand_color_4; }
 
 
 
@@ -1187,7 +1187,7 @@ p a.dashed:hover {
 %evo-button-inverse-base             {
     border:1px solid;
     color: $button_color_inverse;   // Defined by button colors in COLORS above
-    background-color: $button_background_color_inverse;
+    // background-color: $button_background_color_inverse;
     border-radius: 0px;
     // font-family: $button_fonts;
     display: inline-block;
